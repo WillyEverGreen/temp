@@ -506,7 +506,7 @@ body {
 /* Mobile */
 @media (max-width: 540px) {
   .section-1 {
-    height: 150vh;
+    height: 160vh;
     padding: 5vh 0;
     width: 620px;
   }
@@ -564,25 +564,84 @@ body {
     font-size: 5vw;
   }
 
-  .section-2 {
-    height: auto;
-    padding: 5vh 0;
-    width: 620px;
-  }
-
   .bird dotlottie-player {
     max-width: 160px;
   }
   .bird {
     position: absolute;
-    top: 52px; /* Adjust top position */
+    top: 66px; /* Adjust top position */
     left: 185px;
   }
-
+  .section-2 {
+    height: 200vh;
+    padding: 5vh 0;
+    width: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .my-image-card {
+    width: 100vw;
+    height: 0vh;
+    position: relative;
+    padding-bottom: 500px;
+  }
+  .card1 {
+    width: 2000px;
+    height: 90vh;
+    /* padding-bottom: 500px; */
+  }
+  .text p {
+    font-size: 80px;
+    text-align: center;
+  }
+  .about-me {
+    position: absolute;
+    right: 18%;
+    bottom: -260%;
+  }
+  .about-me-heading p {
+    width: 500px;
+    padding-right: 2px;
+    position: absolute;
+    left: -40px;
+  }
+  .about-me-content p {
+    width: 400px;
+    padding-top: 30px;
+  }
   .section-3 {
     height: auto;
     padding: 5vh 0;
     width: 580px;
+  }
+  .x-symbol {
+    opacity: 0;
+  }
+  .about-me-resume {
+    position: absolute;
+    top: 40%;
+    left: 100%;
+  }
+  .btn1 {
+    position: absolute;
+    top: 80%;
+    left: -100%;
+    width: 150px;
+    height: 60px;
+    font-size: 14px;
+  }
+  .btn2 {
+    position: absolute;
+    top: 80%;
+    left: -40%;
+    width: 150px;
+    height: 60px;
+    font-size: 14px;
+  }
+  .about-me-resume dotlottie-player {
+    width: 400px;
   }
   .section-4 {
     height: auto;
