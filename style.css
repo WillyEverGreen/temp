@@ -506,7 +506,7 @@ body {
 /* Mobile */
 @media (max-width: 540px) {
   .section-1 {
-    height: 100vh;
+    height: 150vh;
     padding: 5vh 0;
     width: 620px;
   }
@@ -516,23 +516,28 @@ body {
     padding: 4vw;
     padding-left: 8vw;
   }
-
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .main-text {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-direction: column;
-    padding-left: 180px;
+    padding-left: 250px;
   }
 
   .main-text .line1 {
-    font-size: clamp(24px, 10vw, 60px);
+    font-size: clamp(24px, 30vw, 80px);
     text-align: center;
   }
 
   .main-text .line2 {
-    font-size: clamp(24px, 10vw, 60px);
+    font-size: clamp(24px, 30vw, 80px);
+    text-align: center;
   }
   .ele3 {
     font-size: 12px;
