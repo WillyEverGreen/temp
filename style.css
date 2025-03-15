@@ -504,27 +504,20 @@ body {
 /* Responsive Design */
 
 /* Mobile */
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   .section-1 {
-    /* background-color: #6a994e; */
+    height: 100vh;
     padding: 5vh 0;
-
-    width: 100%;
-    max-width: 580px;
-    min-height: 100vh;
-    /* height: 2200px; */
-    /* overflow-y: hidden;
-     */
-    margin: 0 auto;
+    width: 620px;
   }
 
   .section-1 .ele1 {
-    font-size: 38px;
-    padding: 16px;
-    padding-left: 30px;
+    font-size: 7vw;
+    padding: 4vw;
+    padding-left: 8vw;
   }
 
-  .her .main-text {
+  .main-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -569,7 +562,7 @@ body {
   .section-2 {
     height: auto;
     padding: 5vh 0;
-    width: 580px;
+    width: 620px;
   }
 
   .bird dotlottie-player {
@@ -581,105 +574,25 @@ body {
     left: 185px;
   }
 
-  /* .section-3 {
+  .section-3 {
     height: auto;
     padding: 5vh 0;
     width: 580px;
-  } */
+  }
+  .section-4 {
+    height: auto;
+    padding: 5vh 0;
+    width: 580px;
+  }
 
   .section-5 {
     height: auto;
     padding: 5vh 0;
-    width: 580px;
+    width: 620px;
   }
 
   .main-text {
     font-size: clamp(18px, 7vw, 60px);
-    text-align: center;
-  }
-}
-@media (max-width: 750px) {
-  .section-1 {
-    height: auto;
-    padding: 6vh 0;
-    width: 700px;
-  }
-
-  .section-1 .ele1 {
-    font-size: 40px;
-    padding: 18px;
-    padding-left: 50px;
-  }
-
-  .her .main-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    padding-left: 140px;
-  }
-
-  .main-text .line1 {
-    font-size: 90px;
-    text-align: center;
-  }
-
-  .main-text .line2 {
-    font-size: 90px;
-  }
-
-  .ele3 {
-    font-size: 13px;
-    opacity: 0.75;
-  }
-
-  .menu-item {
-    width: 110px;
-  }
-
-  .nav-menu p {
-    font-size: 15px;
-  }
-
-  .side-text-content {
-    position: absolute;
-    font-size: 105px;
-  }
-
-  .side-text-content .line {
-    position: absolute;
-    left: 48%;
-  }
-
-  .side-text-content p {
-    font-size: 4.8vw;
-  }
-
-  .section-2 {
-    height: auto;
-    padding: 6vh 0;
-    width: 700px;
-  }
-
-  .bird dotlottie-player {
-    max-width: 170px;
-  }
-
-  .bird {
-    position: absolute;
-    top: 55px;
-    left: 220px;
-  }
-
-  .section-5 {
-    height: auto;
-    padding: 6vh 0;
-    width: 700px;
-  }
-
-  .main-text {
-    font-size: clamp(19px, 7vw, 63px);
     text-align: center;
   }
 }
