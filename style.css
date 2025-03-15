@@ -502,94 +502,180 @@ body {
 }
 
 /* Responsive Design */
-/* @media (max-width: 1024px) {
-  .skills {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns 
-  }
-} */
-
-/* Mobile (max-width: 480px) */
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-  .section-1,
-  .section-2,
-  .section-3,
-  .section-4,
-  .section-5 {
-    width: 100vw;
-  }
-}
-
-/* Laptop (min-width: 1024px) */
-@media (min-width: 1024px) {
-  body {
-    font-size: 18px;
-  }
-}
 
 /* Mobile */
 @media (max-width: 480px) {
   .section-1 {
-    height: auto;
+    height: 2000px;
+    /* background-color: #6a994e; */
     padding: 5vh 0;
     width: 580px;
+    /* height: 2200px; */
+    overflow-y: hidden;
   }
+
   .section-1 .ele1 {
     font-size: 38px;
     padding: 16px;
     padding-left: 30px;
   }
+
   .her .main-text {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     flex-direction: column;
     padding-left: 180px;
   }
+
   .main-text .line1 {
     font-size: 85px;
     text-align: center;
   }
+
   .main-text .line2 {
     font-size: 85px;
   }
+  .ele3 {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+  .menu-item {
+    width: 100px;
+  }
+  .nav-menu p {
+    font-size: 14px;
+  }
+
+  .side-text-content {
+    position: absolute;
+
+    font-size: 100px;
+  }
+
+  .side-text-content .line {
+    position: absolute;
+    left: 50%;
+  }
+  .side-text-content p {
+    font-size: 5vw;
+  }
+
   .section-2 {
     height: auto;
     padding: 5vh 0;
     width: 580px;
   }
+
+  .bird dotlottie-player {
+    max-width: 160px;
+  }
+  .bird {
+    position: absolute;
+    top: 52px; /* Adjust top position */
+    left: 185px;
+  }
+
   /* .section-3 {
     height: auto;
     padding: 5vh 0;
     width: 580px;
   } */
+
   .section-5 {
     height: auto;
     padding: 5vh 0;
     width: 580px;
   }
+
   .main-text {
     font-size: clamp(18px, 7vw, 60px);
     text-align: center;
   }
-  .ele1,
-  .ele2 {
-    font-size: 5vw;
+}
+@media (max-width: 750px) {
+  .section-1 {
+    height: auto;
+    padding: 6vh 0;
+    width: 700px;
   }
-  .about-me-content p {
-    font-size: 12px;
+
+  .section-1 .ele1 {
+    font-size: 40px;
+    padding: 18px;
+    padding-left: 50px;
+  }
+
+  .her .main-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding-left: 140px;
+  }
+
+  .main-text .line1 {
+    font-size: 90px;
+    text-align: center;
+  }
+
+  .main-text .line2 {
+    font-size: 90px;
+  }
+
+  .ele3 {
+    font-size: 13px;
+    opacity: 0.75;
+  }
+
+  .menu-item {
+    width: 110px;
+  }
+
+  .nav-menu p {
+    font-size: 15px;
+  }
+
+  .side-text-content {
+    position: absolute;
+    font-size: 105px;
+  }
+
+  .side-text-content .line {
+    position: absolute;
+    left: 48%;
+  }
+
+  .side-text-content p {
+    font-size: 4.8vw;
+  }
+
+  .section-2 {
+    height: auto;
+    padding: 6vh 0;
+    width: 700px;
+  }
+
+  .bird dotlottie-player {
+    max-width: 170px;
+  }
+
+  .bird {
+    position: absolute;
+    top: 55px;
+    left: 220px;
+  }
+
+  .section-5 {
+    height: auto;
+    padding: 6vh 0;
+    width: 700px;
+  }
+
+  .main-text {
+    font-size: clamp(19px, 7vw, 63px);
+    text-align: center;
   }
 }
-
-/* Laptop */
-/* @media (min-width: 1024px) {
-  .hero-section {
-    height: 100vh;
-    padding: 10vh 0;
-  }
-  .main-text {
-    font-size: clamp(40px, 6vw, 100px);
-  }
-} */
