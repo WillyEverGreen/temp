@@ -573,7 +573,7 @@ body {
     left: 185px;
   }
   .section-2 {
-    height: 200vh;
+    height: 220vh;
     padding: 5vh 0;
     width: 620px;
     display: flex;
@@ -582,7 +582,7 @@ body {
     flex-direction: column;
   }
   .my-image-card {
-    width: 100vw;
+    width: 110vw;
     height: 0vh;
     position: relative;
     padding-bottom: 500px;
@@ -599,7 +599,7 @@ body {
   .about-me {
     position: absolute;
     right: 18%;
-    bottom: -260%;
+    bottom: -290%;
   }
   .about-me-heading p {
     width: 500px;
