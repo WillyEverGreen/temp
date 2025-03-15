@@ -506,12 +506,16 @@ body {
 /* Mobile */
 @media (max-width: 480px) {
   .section-1 {
-    height: 2000px;
     /* background-color: #6a994e; */
     padding: 5vh 0;
-    width: 580px;
+
+    width: 100%;
+    max-width: 580px;
+    min-height: 100vh;
     /* height: 2200px; */
-    overflow-y: hidden;
+    /* overflow-y: hidden;
+     */
+    margin: 0 auto;
   }
 
   .section-1 .ele1 {
@@ -530,12 +534,12 @@ body {
   }
 
   .main-text .line1 {
-    font-size: 85px;
+    font-size: clamp(24px, 10vw, 60px);
     text-align: center;
   }
 
   .main-text .line2 {
-    font-size: 85px;
+    font-size: clamp(24px, 10vw, 60px);
   }
   .ele3 {
     font-size: 12px;
