@@ -573,90 +573,112 @@ body {
     left: 185px;
   }
   .section-2 {
-    height: 220vh;
-    padding: 5vh 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .card1 {
+    max-width: 280px;
+  }
+
+  .about-me {
+    max-width: 100%;
+  }
+
+  .about-me-heading p {
+    font-size: 22px;
+  }
+
+  .about-me-content p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 130px;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  .about-me-resume dotlottie-player {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 580px) {
+  .section-2 {
+    height: 160vh;
+
     width: 620px;
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .my-image-card {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    padding-top: 20px;
   }
-  .my-image-card {
-    width: 110vw;
-    height: 0vh;
-    position: relative;
-    padding-bottom: 500px;
-  }
+
   .card1 {
-    width: 2000px;
-    height: 90vh;
-    /* padding-bottom: 500px; */
-  }
-  .text p {
-    font-size: 80px;
-    text-align: center;
-  }
-  .about-me {
-    position: absolute;
-    right: 18%;
-    bottom: -290%;
-  }
-  .about-me-heading p {
     width: 500px;
-    padding-right: 2px;
-    position: absolute;
-    left: -40px;
-  }
-  .about-me-content p {
-    width: 400px;
-    padding-top: 30px;
-  }
-  .section-3 {
-    height: auto;
-    padding: 5vh 0;
-    width: 580px;
-  }
-  .x-symbol {
-    opacity: 0;
-  }
-  .about-me-resume {
-    position: absolute;
-    top: 40%;
-    left: 100%;
-  }
-  .btn1 {
-    position: absolute;
-    top: 80%;
-    left: -100%;
-    width: 150px;
-    height: 60px;
-    font-size: 14px;
-  }
-  .btn2 {
-    position: absolute;
-    top: 80%;
-    left: -40%;
-    width: 150px;
-    height: 60px;
-    font-size: 14px;
-  }
-  .about-me-resume dotlottie-player {
-    width: 400px;
-  }
-  .section-4 {
-    height: auto;
-    padding: 5vh 0;
-    width: 580px;
   }
 
-  .section-5 {
-    height: auto;
-    padding: 5vh 0;
-    width: 620px;
+  .middle-part {
+    background-size: cover;
+    background-position: center;
   }
 
-  .main-text {
-    font-size: clamp(18px, 7vw, 60px);
+  .about-me {
+    width: 200%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+  }
+
+  .about-me-heading {
+    font-size: 6vw;
+    font-weight: bold;
+    color: #bc4749;
+  }
+
+  .x-symbol {
+    opacity: 0; /* Hide X symbols */
+  }
+
+  .about-me-content {
+    font-size: 4vw;
+    line-height: 1.3;
+    padding-top: 15px;
+  }
+
+  .about-me-resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 80%;
+    font-size: 3vw;
+  }
+
+  dotlottie-player {
+    width: 200px !important;
+    height: 200px !important;
+    margin-top: 20px;
   }
 }
