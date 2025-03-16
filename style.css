@@ -646,10 +646,16 @@ body {
     text-align: center;
   }
 
-  .about-me-heading {
-    font-size: 6vw;
+  .about-me-heading p {
+    font-size: 12vw;
     font-weight: bold;
     color: #bc4749;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers everything inside */
+    text-align: center;
+    width: 400px;
+    margin-left: 86px;
   }
 
   .x-symbol {
@@ -674,6 +680,9 @@ body {
   .btn2 {
     width: 80%;
     font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   dotlottie-player {
