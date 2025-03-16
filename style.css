@@ -569,8 +569,8 @@ body {
   }
   .bird {
     position: absolute;
-    top: 66px; /* Adjust top position */
-    left: 185px;
+    top: 100px; /* Adjust top position */
+    left: 195px;
   }
   .section-2 {
     width: 100%;
@@ -679,5 +679,62 @@ body {
     width: 200px !important;
     height: 200px !important;
     margin-top: 20px;
+  }
+}
+@media (max-width: 580px) {
+  .section-3 {
+    height: 160vh;
+
+    width: 620px;
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f2e8cf;
+    border-left: #f2e8cf;
+  }
+  .main {
+    background-color: #f2e8cf;
+  }
+  .top {
+    width: 620px;
+  }
+  .bottom {
+    width: 620px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-5{
+    height: 160vh;
+
+    width: 620px;
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f2e8cf;
+    border-left: #f2e8cf;
+    padding-bottom: 80px;
+  }
+  }
+  .skills {
+    grid-template-columns: repeat(3, 1fr); /* Show 2 icons per row */
+    grid-template-rows: repeat(auto-fill, minmax(60px, auto));
+    gap: 10px;
+  }
+
+  .skills img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .tech-heading {
+    font-size: 10vw;
+    padding-top: 5vh;
   }
 }
