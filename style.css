@@ -488,6 +488,10 @@ body {
   font-family: "Rowdies", sans-serif;
   margin-bottom: 3vh;
 }
+.tech-heading{
+  padding-bottom:3vh !important;
+  
+}
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -534,14 +538,14 @@ body {
 }
 
 .offer-card h3 {
-  font-size: 1.8rem;
+  font-size: 1.8rem !important;
   color: #f2e8cf;
   padding-top: 4vh;
 }
 
 .offer-card p {
   padding-top: 2vh;
-  font-size: 1rem;
+  font-size: 1rem  !important;
   color: #ddd;
 }
 
@@ -553,7 +557,7 @@ body {
   transform: scale(1.1) translateY(-10px);
 }
 .skill-p {
-  padding: 2vw;
+  padding: 2vw !important;
   color: #ddd;
 }
 
@@ -564,7 +568,7 @@ body {
   line-height: 0.9;
   font-family: kanit;
   columns: #ddd;
-  width: 750px;
+  width: 750px !important;
   /* background-color: #6a994e; */
   text-align: center;
   opacity: 0.8;
