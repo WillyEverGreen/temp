@@ -36,7 +36,210 @@ gsap.from(".side-text", {
   delay: 0.8,
   ease: "power2.out",
 });
+// sec2 animations
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.from(".floating-card", {
+    opacity: 0,
+    y: -50,
+    duration: 1.5,
+    // delay: 2,
+    // ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".floating-card",
+      start: "50% 50%",
+      end: "50% 50%",
+      scrub: 3,
+      // markers: true,
+    },
+  });
 
+  // gsap.from(".about-me", {
+  //   opacity: 0,
+  //   y: 50,
+  //   duration: 1.5,
+  //   ease: "power3.out",
+  //   scrollTrigger: {
+  //     trigger: ".floating-card",
+  //     start: "50 50%",
+  //     end: "50% 50%",
+  //     scrub: 3,
+  //     markers: true,
+  //   },
+  // });
+  gsap.from(".about-me-heading .text", {
+    opacity: 0,
+    x: -50,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".about-me-heading .text",
+      start: "50 50%",
+      // end: "50% 50%",
+      scrub: 1,
+      toggleActions: "play none none reverse",
+    },
+  });
+
+  gsap.from(".x-symbol img", {
+    opacity: 0,
+    scale: 0,
+    stagger: 0.15,
+    duration: 2,
+    ease: "back.out(1.7)",
+    scrollTrigger: {
+      trigger: ".x-symbol",
+      start: "50 50%",
+      end: "50% 50%",
+      scrub: 3,
+      toggleActions: "play none none reverse",
+    },
+  });
+
+  gsap.from(".about-me-content p", {
+    opacity: 0,
+    y: 30,
+    duration: 1.2,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".about-me-content p",
+      start: "50 50%",
+
+      scrub: 2,
+      toggleActions: "play none none reverse",
+    },
+  });
+});
+//sec5 animations
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate the "SKILLS" heading
+  gsap.from(".tech-heading", {
+    opacity: 0,
+    y: -50,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".tech-heading",
+      start: "top 40%", // Starts slightly early when entering
+      end: "top 60%",
+      scrub: 4,
+      toggleActions: "play none none reverse",
+    },
+  });
+
+  // Animate Skill Icons (Staggered effect)
+  gsap.from(".skills-grid img", {
+    opacity: 0,
+    scale: 0.5,
+    stagger: 0.2,
+    duration: 1.5,
+    ease: "back.out(1.5)",
+    scrollTrigger: {
+      trigger: ".skills-grid",
+      start: "top 85%", // Starts after heading animates
+      end: "top 50%",
+      scrub: 2,
+      toggleActions: "play none none reverse",
+    },
+  });
+
+  // Animate the paragraph under skills
+  gsap.from(".skill-p p", {
+    opacity: 0,
+    y: 50,
+    duration: 1.5,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".skill-p",
+      start: "top 80%", // Starts after skill icons appear
+      end: "top 55%",
+      scrub: 2,
+      toggleActions: "play none none reverse",
+    },
+  });
+
+  // Animate "WHAT I CAN OFFER" heading
+  gsap.from(".offer-heading", {
+    opacity: 0,
+    y: -50,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".offer-heading",
+      start: "top 40%", // Appears naturally after skill section
+      end: "top 55%",
+      scrub: 4,
+      toggleActions: "play none none reverse",
+    },
+  });
+
+  // Animate Offer Cards (Web Dev from Left, UI/UX from Right)
+  // Animate Offer Cards on Scroll
+  gsap.from(".offer-card:nth-child(1)", {
+    opacity: 0,
+    x: -100,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".offer-card:nth-child(1)",
+      start: "top 80%",
+      end: "top 50%",
+      scrub: 2,
+      toggleActions: "play none none reverse",
+    },
+    overwrite: "auto", // Prevent conflicts
+  });
+
+  gsap.from(".offer-card:nth-child(2)", {
+    opacity: 0,
+    x: 100,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".offer-card:nth-child(2)",
+      start: "top 80%",
+      end: "top 50%",
+      scrub: 2,
+      toggleActions: "play none none reverse",
+    },
+    overwrite: "auto",
+  });
+
+  // Fix Hover Effect Using GSAP
+  document.querySelectorAll(".offer-card").forEach((card) => {
+    card.addEventListener("mouseenter", () => {
+      gsap.to(card, {
+        scale: 1.1,
+        duration: 0.3,
+        ease: "power2.out",
+      });
+    });
+
+    card.addEventListener("mouseleave", () => {
+      gsap.to(card, {
+        scale: 1,
+        duration: 0.3,
+        ease: "power2.out",
+      });
+    });
+  });
+
+  // Background fade-in effect for smoother appearance
+  // gsap.from(".section-5", {
+  //   opacity: 0,
+  //   duration: 2,
+  //   ease: "power2.out",
+  //   scrollTrigger: {
+  //     trigger: ".section-5",
+  //     start: "top 90%", // Subtle fade-in as section enters
+  //     end: "top 70%",
+  //     scrub: 2,
+  //   },
+  // });
+});
+
+//sec3 animations
 var tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".main",
@@ -164,3 +367,5 @@ slider.addEventListener("mouseleave", () => {
 });
 
 update();
+
+/*sec5*/
