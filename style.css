@@ -11,6 +11,7 @@
 body {
   overflow-x: hidden;
 }
+
 .section-1 {
   height: 100vh;
   width: 100vw;
@@ -84,6 +85,24 @@ body {
   line-height: 0.9;
   font-weight: 200;
 }
+.nav-menu a {
+  color: inherit; /* Uses the default text color */
+  text-decoration: none; /* Removes the underline */
+}
+
+.nav-menu a:hover {
+  color: inherit; /* Ensures the color doesn't change on hover */
+  text-decoration: none;
+}
+
+.nav-menu a:visited {
+  color: inherit; /* Ensures visited links don't turn purple */
+}
+
+.nav-menu a:active {
+  color: inherit;
+}
+
 .bird {
   position: absolute;
   left: 58%;
@@ -94,6 +113,7 @@ body {
   font-size: 0.9vw;
   color: #f2e8cf;
   font-family: Kanit;
+  cursor: pointer;
 }
 .side-text {
   display: flex;
@@ -129,6 +149,7 @@ body {
   line-height: 0.9;
   padding: 1.2vw;
 }
+
 /* section 2 starts */
 .section-2 {
   width: 100vw;
@@ -488,6 +509,9 @@ body {
   font-family: "Rowdies", sans-serif;
   margin-bottom: 3vh;
 }
+.tech-heading {
+  padding-bottom: 3.2vh !important;
+}
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -496,8 +520,8 @@ body {
 }
 
 .skills-grid img {
-  width: 100px;
-  height: 100px;
+  width: 78px !important;
+  height: 78px !important;
   border-radius: 50%;
   padding: 10px;
   background-color: rgba(255, 191, 53, 0.2);
@@ -534,14 +558,14 @@ body {
 }
 
 .offer-card h3 {
-  font-size: 1.8rem;
+  font-size: 1.8rem !important;
   color: #f2e8cf;
   padding-top: 4vh;
 }
 
 .offer-card p {
   padding-top: 2vh;
-  font-size: 1rem;
+  font-size: 1rem !important;
   color: #ddd;
 }
 
@@ -553,9 +577,8 @@ body {
   transform: scale(1.1) translateY(-10px);
 }
 .skill-p {
-  padding: 2vw;
+  padding: 2vw !important;
   color: #ddd;
-  width: 750px;
 }
 
 .skill-p p {
@@ -565,11 +588,109 @@ body {
   line-height: 0.9;
   font-family: kanit;
   columns: #ddd;
-
+  /*   width: 750px !important; */
   /* background-color: #6a994e; */
   text-align: center;
   opacity: 0.8;
 }
+/* section6 footer*/
+.footer {
+  background-color: #474a56;
+  color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: kanit;
+  /* background: url(space.jpg);\ */
+}
+.foooter {
+  position: relative;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+.footer-icons {
+  padding-top: 1vw;
+}
+.footer-section p {
+  padding-top: 1vw;
+}
+.footer h3 {
+  border-bottom: 2px solid #f2e8cf;
+  padding-bottom: 10px;
+  padding-top: 8vh;
+  font-size: 2vw;
+}
+.footer ul {
+  list-style: none;
+  padding-top: 1vw;
+  padding-bottom: 5vw;
+}
+.footer ul li {
+  margin: 8px 0;
+}
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer ul li a:hover {
+  color: #f2e8cf;
+}
+.footer-icons a {
+  margin-right: 10px;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.footer-icons a:hover {
+  color: #f2e8cf;
+}
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.feedback-form button {
+  background-color: #f2e8cf;
+
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.feedback-form button:hover {
+  background-color: #e6a000;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  background-color: #11112b;
+  color: #ffffff;
+  width: 100%;
+  /* position: absolute; */
+  bottom: 0;
+}
+.space-animation {
+  position: absolute;
+  top: 36%;
+  width: 20vh;
+  left: 38%;
+}
+
 /* Responsive Design */
 
 /* Mobile */
@@ -805,4 +926,351 @@ body {
 .tech-heading {
   font-size: 10vw;
   padding-top: 5vh;
+}
+@media (max-width: 580px) {
+  /* Section 1 */
+  .section-1 {
+    width: 100%;
+    height: auto;
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-1 .ele1 {
+    font-size: 7vw;
+    padding: 4vw;
+    padding-left: 8vw;
+  }
+
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .main-text .line1,
+  .main-text .line2 {
+    font-size: clamp(24px, 30vw, 80px);
+  }
+
+  .ele3 {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  .menu-item {
+    width: 100px;
+  }
+
+  .nav-menu p {
+    font-size: 14px;
+  }
+
+  .side-text-content {
+    position: absolute;
+    font-size: 100px;
+  }
+
+  .side-text-content .line {
+    position: absolute;
+    left: 50%;
+  }
+
+  .side-text-content p {
+    font-size: 5vw;
+  }
+
+  .bird dotlottie-player {
+    max-width: 160px;
+  }
+
+  .bird {
+    position: absolute;
+    top: 100px;
+    left: 195px;
+  }
+}
+
+@media (max-width: 580px) {
+  /* Section 2 */
+  .section-2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .my-image-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .card1 {
+    width: 320px;
+  }
+
+  .middle-part {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .about-me {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .about-me-heading p {
+    font-size: 10vw;
+    text-align: center;
+  }
+
+  .about-me-content {
+    font-size: 4vw;
+    line-height: 1.3;
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 580px) {
+  /* Section 3 */
+  .section-3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f2e8cf;
+  }
+
+  .main {
+    background-color: #f2e8cf;
+  }
+
+  .top,
+  .bottom {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  /* Section 5 */
+  .section-5 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f2e8cf;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 580px) {
+  /* Skills Section */
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(60px, auto));
+    gap: 10px;
+  }
+
+  .skills img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .tech-heading {
+    font-size: 10vw;
+    padding-top: 5vh;
+  }
+}
+
+@media (max-width: 580px) {
+  /* Footer Container */
+  .footer-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .footer-section {
+    width: 100%;
+    min-width: auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer h3 {
+    font-size: 5vw;
+    padding-top: 2vh;
+  }
+
+  .footer ul {
+    padding: 0;
+  }
+
+  .footer-icons a {
+    font-size: 18px;
+  }
+
+  .feedback-form input,
+  .feedback-form textarea {
+    width: 90%;
+  }
+
+  .space-animation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .space-animation dotlottie-player {
+    width: 250px;
+    height: 250px;
+  }
+}
+/* writing media queries for smaller laptops */
+/* Media Query for Smaller Laptops (Max Width: 1280px) */
+@media (max-width: 1280px) {
+  /* Navigation Bar Adjustments */
+  body {
+    overflow-x: hidden;
+  }
+
+  .ele1 {
+    font-size: 1.8rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ele3 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-text {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .bird {
+    position: absolute;
+  }
+  .ele3 {
+    text-align: right;
+  }
+
+  /* About Me Section */
+  .about-me-heading {
+    padding-top: 20vh;
+  }
+  .about-me-content p {
+    font-size: 1rem;
+    padding: 20px 0; /* Added padding above and below paragraph */
+  }
+
+  .about-me-resume {
+    padding: 0;
+    height: 200px;
+
+    gap: 10px;
+    display: flex;
+    gap: 20px;
+  }
+  .fan {
+    height: 20vh;
+  }
+  .about-me-resume button {
+    width: 150px; /* Uniform button size */
+    padding: 10px; /* Added padding to buttons for better appearance */
+  }
+
+  /* Projects Section */
+  .slider img {
+    width: 100%; /* Ensure images scale properly */
+  }
+
+  /* Skills Section */
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .skill-p p {
+    font-size: 0.9rem;
+  }
+
+  /* Offers Section */
+  .offers {
+    padding-right: 5vw;
+  }
+
+  .offer-card h3 {
+    padding: 0;
+    font-size: 12px;
+  }
+  .offer-card p {
+    padding: 0;
+  }
+  /* Footer Adjustments */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+
+  .feedback-form input,
+  .feedback-form textarea {
+    width: 100%;
+  }
+  .space-animation {
+    position: absolute;
+    top: 55%;
+  }
+
+  .space-animation dotlottie-player {
+    width: 320px !important; /* Reduced width */
+    height: 320px !important; /* Reduced height */
+    top: 40%;
+  }
 }
